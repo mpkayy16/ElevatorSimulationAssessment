@@ -59,7 +59,7 @@ namespace ElevatorSimulatorAssessmentTests
         {
 
             var floors = FloorExtensions.GenerateMockFloors();
-            Elevator elevator = new(7,9,10,5,DirectionType.Down, "Test Going Down Last Floor");//1,9, 10, 4, DirectionType.Up, "Test Going Down Last Floor"
+            Elevator elevator = new(7,9,10,5,DirectionType.Down, "Test Going Down Last Floor");
             
             Assert.AreEqual(FloorExtensions.GetLastStop(floors, elevator),0);
         }
